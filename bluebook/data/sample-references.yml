@@ -1,0 +1,68 @@
+version: 1
+status: reviewed_seed
+references:
+  - id: react
+    type: paper
+    title: "ReAct: Synergizing Reasoning and Acting in Language Models"
+    authors: "Yao et al."
+    year: 2023
+    url: https://arxiv.org/abs/2210.03629
+    targets: [3]
+    verification_status: source_present_in_primary
+  - id: mcp
+    type: official_documentation
+    title: Model Context Protocol
+    url: https://modelcontextprotocol.io/
+    targets: [6]
+    verification_status: pending_live_check
+  - id: a2a
+    type: official_documentation
+    title: Agent2Agent Protocol
+    url: https://a2a-protocol.org/
+    targets: [6, 14]
+    verification_status: pending_live_check
+  - id: opentelemetry
+    type: standard_project
+    title: OpenTelemetry
+    url: https://opentelemetry.io/
+    targets: [10]
+    verification_status: pending_live_check
+  - id: rfc8785
+    type: standard
+    title: JSON Canonicalization Scheme (JCS)
+    url: https://www.rfc-editor.org/rfc/rfc8785
+    targets: [11]
+    verification_status: source_identified
+  - id: ed25519
+    type: standard
+    title: Edwards-Curve Digital Signature Algorithm (EdDSA)
+    url: https://www.rfc-editor.org/rfc/rfc8032
+    targets: [11]
+    verification_status: source_identified
+  - id: tau2-bench
+    type: paper
+    title: "τ²-Bench: Evaluating Conversational Agents in a Dual-Control Environment"
+    year: 2025
+    url: https://arxiv.org/abs/2506.07982
+    targets: [10]
+    verification_status: source_present_in_primary
+  - id: androidworld
+    type: paper
+    title: "AndroidWorld: A Dynamic Benchmarking Environment for Autonomous Agents"
+    year: 2024
+    url: https://arxiv.org/abs/2405.14573
+    targets: [8, 10]
+    verification_status: source_present_in_primary
+  - id: primary-experiment-ledgers
+    type: repository_evidence
+    title: Chapter experiment ledgers and validation manifests
+    path: chapter*/EXPERIMENT_LEDGER.md
+    targets: [0, 4, 9, 10, 11]
+    verification_status: partial
+  - id: microsoft-agent-beginners
+    type: vendor_course
+    title: AI Agents for Beginners
+    path: ../ai-agents-for-beginners
+    license: MIT
+    targets: [0, 2, 4, 9, 10, 11]
+    verification_status: local_source

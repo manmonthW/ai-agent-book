@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="t d"><title id="t">fig01-agent-boundary-loop</title><desc id="d">AI Agent蓝皮书架构概念图，可编辑源为Excalidraw。</desc><defs><filter id="shadow"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#172B4D" flood-opacity=".10"/></filter><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3z" fill="#42526E"/></marker></defs><rect width="100%" height="100%" fill="#F7F8FA"/>
+<text x="64" y="49.0" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="500" fill="#4C9AFF">BLUEBOOK  /  CHAPTER 01</text>
+<text x="64" y="97.0" font-family="Inter,Arial,sans-serif" font-size="31" font-weight="700" fill="#172B4D">Agent边界与反馈闭环</text>
+<text x="66" y="129.0" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="500" fill="#6B778C">模型提出候选，Harness守住权力边界，环境反馈决定下一步</text>
+<polyline points="64,154 1336,154" fill="none" stroke="#EBECF0" stroke-width="2"/>
+<rect x="70" y="190" width="860" height="540" rx="14" fill="#FFFFFF" stroke="#B3BAC5" stroke-width="2" filter="url(#shadow)"/>
+<text x="500.0" y="460.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#B3BAC5"></text>
+<text x="100" y="230.0" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="500" fill="#6B778C">AGENT  /  DECISION SPACE</text>
+<rect x="185" y="285" width="350" height="155" rx="14" fill="#EAE6FF" stroke="#6554C0" stroke-width="2" filter="url(#shadow)"/>
+<text x="360.0" y="349.06" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="21" fill="#6554C0">MODEL</text>
+<text x="360.0" y="375.94" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="21" fill="#6554C0">理解语义 · 生成候选</text>
+<rect x="185" y="515" width="620" height="155" rx="14" fill="#DEEBFF" stroke="#4C9AFF" stroke-width="2" filter="url(#shadow)"/>
+<text x="495.0" y="566.9" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="20" fill="#4C9AFF">HARNESS</text>
+<text x="495.0" y="592.5" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="20" fill="#4C9AFF">Context · State · Tools</text>
+<text x="495.0" y="618.1" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="20" fill="#4C9AFF">Policy · Budget · Verify</text>
+<polyline points="360,440 360,515" fill="none" stroke="#42526E" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="380" y="477.0" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="500" fill="#6B778C">typed proposal</text>
+<rect x="1020" y="285" width="310" height="350" rx="14" fill="#E3FCEF" stroke="#00875A" stroke-width="2" filter="url(#shadow)"/>
+<text x="1175.0" y="419.68" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="21" fill="#00875A">ENVIRONMENT</text>
+<text x="1175.0" y="446.56" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="21" fill="#00875A"></text>
+<text x="1175.0" y="473.44" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="21" fill="#00875A">User · Files · DB</text>
+<text x="1175.0" y="500.32" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="21" fill="#00875A">Web · Devices</text>
+<polyline points="805,545 975,545 975,450 1020,450" fill="none" stroke="#42526E" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1020,600 955,600 955,640 805,640" fill="none" stroke="#42526E" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="840" y="519.0" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="500" fill="#FF991F">ACTION</text>
+<text x="840" y="666.0" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="500" fill="#00875A">OBSERVATION</text>
+<rect x="570" y="285" width="235" height="155" rx="14" fill="#FFF0B3" stroke="#FF991F" stroke-width="2" filter="url(#shadow)"/>
+<text x="687.5" y="339.46" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#FF991F">控制面</text>
+<text x="687.5" y="362.5" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#FF991F">身份 · 权限</text>
+<text x="687.5" y="385.53999999999996" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#FF991F">副作用 · 审计</text>
+<rect x="245" y="770" width="900" height="72" rx="14" fill="#FFEBE6" stroke="#DE350B" stroke-width="2" filter="url(#shadow)"/>
+<text x="695.0" y="806.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="20" fill="#DE350B">模型影响决策，但不能自行授予权限或宣告环境成功</text>
+</svg>

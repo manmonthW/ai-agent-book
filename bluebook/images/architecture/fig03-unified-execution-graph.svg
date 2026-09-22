@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="t d"><title id="t">fig03-unified-execution-graph</title><desc id="d">AI Agent蓝皮书架构概念图，可编辑源为Excalidraw。</desc><defs><filter id="shadow"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#172B4D" flood-opacity=".10"/></filter><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3z" fill="#42526E"/></marker></defs><rect width="100%" height="100%" fill="#F7F8FA"/>
+<text x="64" y="49.0" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="500" fill="#4C9AFF">BLUEBOOK  /  CHAPTER 03</text>
+<text x="64" y="97.0" font-family="Inter,Arial,sans-serif" font-size="31" font-weight="700" fill="#172B4D">统一执行图</text>
+<text x="66" y="129.0" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="500" fill="#6B778C">主路径清晰，等待与恢复是显式分支，状态贯穿每一个节点</text>
+<polyline points="64,154 1336,154" fill="none" stroke="#EBECF0" stroke-width="2"/>
+<rect x="45" y="265" width="180" height="100" rx="14" fill="#EBECF0" stroke="#42526E" stroke-width="2" filter="url(#shadow)"/>
+<text x="135.0" y="303.48" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#42526E">INPUT</text>
+<text x="135.0" y="326.52000000000004" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#42526E">输入</text>
+<rect x="270" y="265" width="180" height="100" rx="14" fill="#E3FCEF" stroke="#00875A" stroke-width="2" filter="url(#shadow)"/>
+<text x="360.0" y="303.48" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#00875A">ROUTE</text>
+<text x="360.0" y="326.52000000000004" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#00875A">程序</text>
+<polyline points="225,315 270,315" fill="none" stroke="#42526E" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="495" y="265" width="180" height="100" rx="14" fill="#EAE6FF" stroke="#6554C0" stroke-width="2" filter="url(#shadow)"/>
+<text x="585.0" y="303.48" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#6554C0">PLAN</text>
+<text x="585.0" y="326.52000000000004" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#6554C0">模型</text>
+<polyline points="450,315 495,315" fill="none" stroke="#42526E" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="720" y="265" width="180" height="100" rx="14" fill="#DEEBFF" stroke="#4C9AFF" stroke-width="2" filter="url(#shadow)"/>
+<text x="810.0" y="303.48" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#4C9AFF">EXECUTE</text>
+<text x="810.0" y="326.52000000000004" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#4C9AFF">工具</text>
+<polyline points="675,315 720,315" fill="none" stroke="#42526E" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="945" y="265" width="180" height="100" rx="14" fill="#E3FCEF" stroke="#00875A" stroke-width="2" filter="url(#shadow)"/>
+<text x="1035.0" y="303.48" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#00875A">VERIFY</text>
+<text x="1035.0" y="326.52000000000004" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#00875A">程序</text>
+<polyline points="900,315 945,315" fill="none" stroke="#42526E" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1170" y="265" width="180" height="100" rx="14" fill="#EBECF0" stroke="#42526E" stroke-width="2" filter="url(#shadow)"/>
+<text x="1260.0" y="303.48" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#42526E">TERMINAL</text>
+<text x="1260.0" y="326.52000000000004" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#42526E">终态</text>
+<polyline points="1125,315 1170,315" fill="none" stroke="#42526E" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="485" y="485" width="260" height="110" rx="14" fill="#FFF0B3" stroke="#FF991F" stroke-width="2" filter="url(#shadow)"/>
+<text x="615.0" y="527.84" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="19" fill="#FF991F">WAIT / APPROVAL</text>
+<text x="615.0" y="552.1600000000001" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="19" fill="#FF991F">人工 · 事件</text>
+<rect x="825" y="485" width="260" height="110" rx="14" fill="#FFEBE6" stroke="#DE350B" stroke-width="2" filter="url(#shadow)"/>
+<text x="955.0" y="528.48" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#DE350B">RECOVER / RETRY</text>
+<text x="955.0" y="551.52" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#DE350B">分类错误 · 有界重试</text>
+<polyline points="740,365 740,440 615,440 615,485" fill="none" stroke="#42526E" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="745,540 785,540 785,365" fill="none" stroke="#42526E" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1035,365 1035,440 955,440 955,485" fill="none" stroke="#42526E" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="955,595 955,650 472,650 472,420 585,420 585,365" fill="none" stroke="#42526E" stroke-width="2" stroke-dasharray="9 7" marker-end="url(#arrow)"/>
+<rect x="185" y="710" width="1030" height="82" rx="14" fill="#DEEBFF" stroke="#4C9AFF" stroke-width="2" filter="url(#shadow)"/>
+<text x="700.0" y="751.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="20" fill="#4C9AFF">TYPED STATE  ·  CHECKPOINT  ·  BUDGET  ·  CANCELLATION  ·  TRACE</text>
+</svg>

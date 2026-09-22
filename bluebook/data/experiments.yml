@@ -1,0 +1,708 @@
+version: 1
+generated: true
+primary_chapters:
+  - source: "primary"
+    chapter: 1
+    readme: "chapter1/README.md"
+    experiment_ids:
+      - "1-1"
+      - "1-2"
+      - "1-3"
+      - "1-4"
+    experiment_projects:
+      1-1:
+        - "EXPERIMENT_LEDGER.md"
+        - "context"
+      1-2:
+        - "web-search-agent"
+      1-3:
+        - "search-codegen"
+      1-4:
+        - "image-gen-workflow"
+    project_directories:
+      - "context"
+      - "image-gen-workflow"
+      - "learning-from-experience"
+      - "search-codegen"
+      - "web-search-agent"
+    verification_status: "unreviewed"
+  - source: "primary"
+    chapter: 2
+    readme: "chapter2/README.md"
+    experiment_ids:
+      - "2-1"
+      - "2-2"
+      - "2-3"
+      - "2-4"
+      - "2-5"
+      - "2-6"
+      - "2-7"
+      - "2-8"
+      - "2-9"
+      - "2-10"
+    experiment_projects:
+      2-1:
+        - "local_llm_serving"
+      2-10:
+        - "context-compression"
+      2-2:
+        - "attention_visualization"
+      2-3:
+        - "kv-cache"
+      2-4:
+        - "prompt-engineering"
+      2-5:
+        - "prompt-injection"
+      2-6:
+        - "agent-skills-ppt"
+      2-8:
+        - "attention_visualization"
+      2-9:
+        - "system-hint"
+    project_directories:
+      - "agent-skills-ppt"
+      - "attention_visualization"
+      - "context-compression"
+      - "kv-cache"
+      - "local_llm_serving"
+      - "prompt-engineering"
+      - "prompt-injection"
+      - "system-hint"
+    verification_status: "unreviewed"
+  - source: "primary"
+    chapter: 3
+    readme: "chapter3/README.md"
+    experiment_ids:
+      - "3-1"
+      - "3-2"
+      - "3-3"
+      - "3-4"
+      - "3-5"
+      - "3-6"
+      - "3-7"
+      - "3-8"
+      - "3-9"
+      - "3-10"
+      - "3-11"
+      - "3-12"
+    experiment_projects:
+      3-1:
+        - "user-memory"
+        - "user-memory-evaluation"
+      3-10:
+        - "contextual-retrieval"
+      3-11:
+        - "contextual-retrieval-for-user-memory"
+      3-12:
+        - "structured-knowledge-extraction"
+      3-2:
+        - "mem0"
+        - "user-memory"
+      3-3:
+        - "log-sanitization"
+      3-4:
+        - "dense-embedding"
+      3-5:
+        - "sparse-embedding"
+      3-6:
+        - "retrieval-pipeline"
+      3-7:
+        - "structured-index"
+      3-8:
+        - "agentic-rag"
+      3-9:
+        - "agentic-rag-for-user-memory"
+    project_directories:
+      - "agentic-rag"
+      - "agentic-rag-for-user-memory"
+      - "contextual-retrieval"
+      - "contextual-retrieval-for-user-memory"
+      - "dense-embedding"
+      - "log-sanitization"
+      - "mem0"
+      - "memobase"
+      - "retrieval-pipeline"
+      - "sparse-embedding"
+      - "structured-index"
+      - "structured-knowledge-extraction"
+      - "user-memory"
+      - "user-memory-evaluation"
+    verification_status: "unreviewed"
+  - source: "primary"
+    chapter: 4
+    readme: "chapter4/README.md"
+    experiment_ids:
+      - "4-1"
+      - "4-2"
+      - "4-3"
+      - "4-4"
+      - "4-5"
+    experiment_projects:
+      4-1:
+        - "EXPERIMENT_LEDGER.md"
+        - "active-tool-discovery"
+      4-2:
+        - "perception-tools"
+      4-3:
+        - "multimodal-agent"
+      4-4:
+        - "execution-tools"
+      4-5:
+        - "EXPERIMENT_LEDGER.md"
+        - "collaboration-tools"
+    project_directories:
+      - "active-tool-discovery"
+      - "active-tool-selection"
+      - "collaboration-tools"
+      - "execution-tools"
+      - "multimodal-agent"
+      - "perception-tools"
+    verification_status: "unreviewed"
+  - source: "primary"
+    chapter: 5
+    readme: "chapter5/README.md"
+    experiment_ids:
+      - "5-1"
+      - "5-2"
+      - "5-3"
+      - "5-4"
+      - "5-5"
+      - "5-6"
+      - "5-7"
+      - "5-8"
+      - "5-9"
+      - "5-10"
+      - "5-11"
+      - "5-12"
+      - "5-13"
+      - "5-14"
+      - "5-15"
+      - "5-16"
+    experiment_projects:
+      5-1:
+        - "provider-failover"
+      5-10:
+        - "adaptive-log-parser"
+      5-11:
+        - "log-diagnosis"
+      5-12:
+        - "agent-creator"
+        - "dynamic-form"
+      5-13:
+        - "erp-agent"
+      5-14:
+        - "conversational-ui"
+      5-15:
+        - "permission-embedded-data-objects"
+      5-16:
+        - "agent-creator"
+      5-2:
+        - "provider-failover"
+      5-3:
+        - "code-for-math"
+      5-4:
+        - "code-for-logic"
+      5-5:
+        - "small-model-codified-rules"
+      5-6:
+        - "paper-to-ppt"
+      5-7:
+        - "paper-to-video"
+      5-8:
+        - "video-edit"
+      5-9:
+        - "cad-vs-diffusion"
+    project_directories:
+      - "adaptive-log-parser"
+      - "agent-creator"
+      - "cad-vs-diffusion"
+      - "code-for-logic"
+      - "code-for-math"
+      - "coding-agent"
+      - "conversational-ui"
+      - "dynamic-form"
+      - "erp-agent"
+      - "log-diagnosis"
+      - "paper-to-ppt"
+      - "paper-to-video"
+      - "permission-embedded-data-objects"
+      - "provider-failover"
+      - "small-model-codified-rules"
+      - "video-edit"
+    verification_status: "unreviewed"
+  - source: "primary"
+    chapter: 6
+    readme: "chapter6/README.md"
+    experiment_ids:
+      - "6-1"
+      - "6-2"
+      - "6-3"
+      - "6-4"
+      - "6-5"
+      - "6-6"
+      - "6-7"
+      - "6-8"
+      - "6-9"
+      - "6-10"
+      - "6-11"
+      - "6-12"
+      - "6-13"
+      - "6-14"
+    experiment_projects:
+      6-1:
+        - "agent-with-event-trigger"
+        - "astra-async-steering"
+      6-10:
+        - "computer-use-open-model/validation/latest.json"
+        - "https://github.com/Vector-Wangel/XLeRobot"
+        - "xlerobot-teleoperation"
+      6-11:
+        - "computer-use-open-model/validation/latest.json"
+        - "https://github.com/Vector-Wangel/XLeRobot"
+        - "xlerobot-teleoperation"
+      6-12:
+        - "computer-use-open-model/validation/latest.json"
+        - "gemini-xlerobot-navigation"
+        - "https://github.com/Vector-Wangel/XLeRobot"
+      6-13:
+        - "computer-use-open-model/validation/latest.json"
+        - "gemini-xlerobot-navigation"
+      6-14:
+        - "computer-use-open-model/validation/latest.json"
+        - "https://github.com/StoneT2000/lerobot-sim2real"
+        - "rgb-sim2real-grasping"
+      6-2:
+        - "astra-async-steering"
+        - "async-agent"
+      6-3:
+        - "astra-async-steering"
+      6-4:
+        - "live-audio"
+        - "streaming-speech"
+      6-5:
+        - "end-to-end-speech"
+        - "streaming-speech"
+      6-6:
+        - "end-to-end-speech"
+      6-7:
+        - "claude-computer-use-native"
+        - "computer-use-open-model/validation/latest.json"
+        - "controllable-tts"
+      6-8:
+        - "claude-computer-use-native"
+        - "computer-use-open-model/validation/latest.json"
+        - "https://github.com/anthropics/claude-quickstarts"
+      6-9:
+        - "computer-use-open-model"
+        - "computer-use-open-model/validation/latest.json"
+        - "https://github.com/browser-use/browser-use"
+    project_directories:
+      - "agent-with-event-trigger"
+      - "astra-async-steering"
+      - "async-agent"
+      - "claude-computer-use-native"
+      - "computer-use-open-model"
+      - "controllable-tts"
+      - "end-to-end-speech"
+      - "gemini-xlerobot-navigation"
+      - "live-audio"
+      - "phone-agent"
+      - "rgb-sim2real-grasping"
+      - "streaming-speech"
+      - "xlerobot-teleoperation"
+    verification_status: "unreviewed"
+  - source: "primary"
+    chapter: 7
+    readme: "chapter7/README.md"
+    experiment_ids:
+      - "7-1"
+      - "7-2"
+      - "7-3"
+      - "7-4"
+      - "7-5"
+      - "7-6"
+      - "7-7"
+      - "7-8"
+      - "7-9"
+      - "7-10"
+      - "7-11"
+      - "7-12"
+      - "7-13"
+      - "7-14"
+    experiment_projects:
+      7-1:
+        - "book/chapter7.md"
+        - "https://arxiv.org/abs/2406.12045"
+        - "https://github.com/sierra-research/tau2-bench"
+        - "tau2-bench-eval"
+      7-10:
+        - "agent-cost-analysis"
+      7-11:
+        - "model-benchmark"
+      7-12:
+        - "user-memory-system-evaluation"
+      7-13:
+        - "android-world"
+        - "openvla-robotwin2-eval"
+      7-14:
+        - "openvla-robotwin2-eval"
+      7-2:
+        - "book/chapter7.md"
+        - "experiment-7-2-human-benchmark"
+        - "https://github.com/SWE-bench/SWE-bench"
+        - "https://github.com/google-research/android_world"
+        - "https://github.com/laude-institute/terminal-bench"
+        - "https://github.com/sierra-research/tau2-bench"
+        - "https://github.com/xlang-ai/OSWorld"
+        - "https://huggingface.co/datasets/gaia-benchmark/GAIA"
+      7-3:
+        - "chapter3/user-memory-evaluation"
+      7-4:
+        - "user-memory-system-evaluation"
+      7-5:
+        - "tts-quality-eval"
+      7-6:
+        - "android-world/failure-attribution"
+      7-7:
+        - "elo-leaderboard"
+        - "user-memory-policy-eval"
+      7-8:
+        - "elo-leaderboard"
+        - "model-action-threshold"
+      7-9:
+        - "model-action-threshold"
+    project_directories:
+      - "agent-cost-analysis"
+      - "android-world"
+      - "elo-leaderboard"
+      - "experiment-7-2-human-benchmark"
+      - "model-action-threshold"
+      - "model-benchmark"
+      - "openvla-robotwin2-eval"
+      - "public-health-reporting-eval"
+      - "tau2-bench-eval"
+      - "tts-quality-eval"
+      - "user-memory-policy-eval"
+      - "user-memory-system-evaluation"
+    verification_status: "unreviewed"
+  - source: "primary"
+    chapter: 8
+    readme: "chapter8/README.md"
+    experiment_ids:
+      - "8-1"
+      - "8-2"
+      - "8-3"
+      - "8-4"
+      - "8-5"
+      - "8-6"
+      - "8-7"
+      - "8-8"
+      - "8-9"
+      - "8-10"
+      - "8-11"
+      - "8-12"
+      - "8-13"
+      - "8-14"
+      - "8-15"
+      - "8-16"
+      - "8-17"
+      - "8-18"
+      - "8-19"
+    experiment_projects:
+      8-1:
+        - "chapter1/learning-from-experience"
+      8-10:
+        - "AdaptThink"
+        - "https://github.com/bojieli/AdaptThink"
+      8-11:
+        - "https://github.com/bojieli/SFTvsRL"
+      8-12:
+        - "SpatialReasoning"
+        - "https://github.com/bojieli/SFTvsRL"
+      8-13:
+        - "SimpleVLA-RL"
+        - "https://arxiv.org/abs/2509.09674"
+      8-14:
+        - "https://github.com/bojieli/verl"
+        - "retool"
+      8-15:
+        - "AWorld-train"
+        - "https://github.com/bojieli/AWorld"
+      8-16:
+        - "RLVP"
+        - "https://github.com/19PINE-AI/rlvp"
+      8-17:
+        - "premature-completion-dpo"
+      8-18:
+        - "curly-quote-sft"
+      8-19:
+        - "exact-copy-sft"
+      8-2:
+        - "chapter1/learning-from-experience"
+      8-3:
+        - "MiniMind-pretrain"
+        - "https://github.com/bojieli/minimind"
+      8-4:
+        - "MiniMind-pretrain"
+        - "https://github.com/bojieli/minimind-v"
+      8-5:
+        - "continued-pretraining"
+      8-6:
+        - "sesame"
+      8-7:
+        - "MultilingualReasoning"
+      8-8:
+        - "chapter8/prompt-distillation"
+      8-9:
+        - "cot-distillation"
+    project_directories:
+      - "AWorld-train"
+      - "AdaptThink"
+      - "Intuitor"
+      - "MiniMind-pretrain"
+      - "MultilingualReasoning"
+      - "RLVP"
+      - "SimpleVLA-RL"
+      - "SpatialReasoning"
+      - "continued-pretraining"
+      - "cot-distillation"
+      - "curly-quote-sft"
+      - "exact-copy-sft"
+      - "orpheus"
+      - "premature-completion-dpo"
+      - "prompt-distillation"
+      - "retool"
+      - "sesame"
+      - "speech-sft-experiment"
+    verification_status: "unreviewed"
+  - source: "primary"
+    chapter: 9
+    readme: "chapter9/README.md"
+    experiment_ids:
+      - "9-1"
+      - "9-2"
+      - "9-3"
+      - "9-4"
+      - "9-5"
+      - "9-6"
+      - "9-7"
+      - "9-8"
+      - "9-9"
+    experiment_projects:
+      9-1:
+        - "trajectory-verifier"
+      9-2:
+        - "tau2-escalation-experience"
+      9-3:
+        - "prompt-auto-optimization"
+      9-5:
+        - "browser-use-rpa"
+      9-6:
+        - "self-modifying-agent"
+      9-7:
+        - "harness-safety-gate"
+      9-8:
+        - "hermes-self-evolution"
+      9-9:
+        - "self-evolution-eval"
+    project_directories:
+      - "ai-style-skill"
+      - "browser-use-rpa"
+      - "harness-safety-gate"
+      - "hermes-self-evolution"
+      - "prompt-auto-optimization"
+      - "self-evolution-eval"
+      - "self-evolving-tools"
+      - "self-modifying-agent"
+      - "tau2-escalation-experience"
+      - "trajectory-verifier"
+    verification_status: "unreviewed"
+  - source: "primary"
+    chapter: 10
+    readme: "chapter10/README.md"
+    experiment_ids:
+      - "10-1"
+      - "10-2"
+      - "10-3"
+      - "10-4"
+      - "10-5"
+      - "10-6"
+    experiment_projects:
+      10-1:
+        - "multi-role-transfer"
+      10-2:
+        - "book-translation"
+      10-3:
+        - "autonomous-phone-registration"
+      10-4:
+        - "parallel-web-research"
+      10-5:
+        - "generative-agents"
+      10-6:
+        - "voice-werewolf"
+    project_directories:
+      - "autonomous-phone-registration"
+      - "book-translation"
+      - "generative-agents"
+      - "multi-role-transfer"
+      - "parallel-web-research"
+      - "staged-system-prompt"
+      - "talkact-reproduction"
+      - "voice-werewolf"
+    verification_status: "unreviewed"
+supplementary_lessons:
+  - source: "supplementary"
+    lesson: "00-course-setup"
+    readme: "00-course-setup/README.md"
+    notebooks:
+      []
+    role: "supplement"
+    review_status: "pending"
+  - source: "supplementary"
+    lesson: "01-intro-to-ai-agents"
+    readme: "01-intro-to-ai-agents/README.md"
+    notebooks:
+      - "01-intro-to-ai-agents/code_samples/01-python-agent-framework.ipynb"
+    role: "supplement"
+    review_status: "pending"
+  - source: "supplementary"
+    lesson: "02-explore-agentic-frameworks"
+    readme: "02-explore-agentic-frameworks/README.md"
+    notebooks:
+      - "02-explore-agentic-frameworks/code_samples/02-python-agent-framework-azure-openai.ipynb"
+      - "02-explore-agentic-frameworks/code_samples/02-python-agent-framework.ipynb"
+    role: "supplement"
+    review_status: "pending"
+  - source: "supplementary"
+    lesson: "03-agentic-design-patterns"
+    readme: "03-agentic-design-patterns/README.md"
+    notebooks:
+      - "03-agentic-design-patterns/code_samples/03-python-agent-framework.ipynb"
+    role: "supplement"
+    review_status: "pending"
+  - source: "supplementary"
+    lesson: "04-tool-use"
+    readme: "04-tool-use/README.md"
+    notebooks:
+      - "04-tool-use/code_samples/04-python-agent-framework.ipynb"
+    role: "supplement"
+    review_status: "pending"
+  - source: "supplementary"
+    lesson: "05-agentic-rag"
+    readme: "05-agentic-rag/README.md"
+    notebooks:
+      - "05-agentic-rag/code_samples/05-dotnet-agent-framework.ipynb"
+      - "05-agentic-rag/code_samples/05-python-agent-framework.ipynb"
+    role: "supplement"
+    review_status: "pending"
+  - source: "supplementary"
+    lesson: "06-building-trustworthy-agents"
+    readme: "06-building-trustworthy-agents/README.md"
+    notebooks:
+      - "06-building-trustworthy-agents/code_samples/06-human-in-the-loop.ipynb"
+      - "06-building-trustworthy-agents/code_samples/06-system-message-framework.ipynb"
+    role: "supplement"
+    review_status: "pending"
+  - source: "supplementary"
+    lesson: "07-planning-design"
+    readme: "07-planning-design/README.md"
+    notebooks:
+      - "07-planning-design/code_samples/07-python-agent-framework.ipynb"
+    role: "supplement"
+    review_status: "pending"
+  - source: "supplementary"
+    lesson: "08-multi-agent"
+    readme: "08-multi-agent/README.md"
+    notebooks:
+      - "08-multi-agent/code_samples/08-python-agent-framework.ipynb"
+      - "08-multi-agent/code_samples/workflows-agent-framework/dotNET/01.dotnet-agent-framework-workflow-ghmodel-basic.ipynb"
+      - "08-multi-agent/code_samples/workflows-agent-framework/dotNET/02.dotnet-agent-framework-workflow-ghmodel-sequential.ipynb"
+      - "08-multi-agent/code_samples/workflows-agent-framework/dotNET/03.dotnet-agent-framework-workflow-ghmodel-concurrent.ipynb"
+      - "08-multi-agent/code_samples/workflows-agent-framework/dotNET/04.dotnet-agent-framework-workflow-aifoundry-condition.ipynb"
+      - "08-multi-agent/code_samples/workflows-agent-framework/python/01.python-agent-framework-workflow-ghmodel-basic.ipynb"
+      - "08-multi-agent/code_samples/workflows-agent-framework/python/02.python-agent-framework-workflow-ghmodel-sequential.ipynb"
+      - "08-multi-agent/code_samples/workflows-agent-framework/python/03.python-agent-framework-workflow-ghmodel-concurrent.ipynb"
+      - "08-multi-agent/code_samples/workflows-agent-framework/python/04.python-agent-framework-workflow-aifoundry-condition.ipynb"
+    role: "supplement"
+    review_status: "pending"
+  - source: "supplementary"
+    lesson: "09-metacognition"
+    readme: "09-metacognition/README.md"
+    notebooks:
+      - "09-metacognition/code_samples/09-python-agent-framework.ipynb"
+    role: "supplement"
+    review_status: "pending"
+  - source: "supplementary"
+    lesson: "10-ai-agents-production"
+    readme: "10-ai-agents-production/README.md"
+    notebooks:
+      - "10-ai-agents-production/code_samples/10-expense_claim-demo.ipynb"
+      - "10-ai-agents-production/code_samples/10-python-agent-framework.ipynb"
+    role: "supplement"
+    review_status: "pending"
+  - source: "supplementary"
+    lesson: "11-agentic-protocols"
+    readme: "11-agentic-protocols/README.md"
+    notebooks:
+      - "11-agentic-protocols/code_samples/11-a2a-agent-framework.ipynb"
+      - "11-agentic-protocols/code_samples/11-mcp-agent-framework.ipynb"
+    role: "supplement"
+    review_status: "pending"
+  - source: "supplementary"
+    lesson: "12-context-engineering"
+    readme: "12-context-engineering/README.md"
+    notebooks:
+      - "12-context-engineering/code_samples/12-chat_summarization.ipynb"
+    role: "supplement"
+    review_status: "pending"
+  - source: "supplementary"
+    lesson: "13-agent-memory"
+    readme: "13-agent-memory/README.md"
+    notebooks:
+      - "13-agent-memory/13-agent-memory-cognee.ipynb"
+      - "13-agent-memory/13-agent-memory.ipynb"
+    role: "supplement"
+    review_status: "pending"
+  - source: "supplementary"
+    lesson: "14-microsoft-agent-framework"
+    readme: "14-microsoft-agent-framework/README.md"
+    notebooks:
+      - "14-microsoft-agent-framework/code-samples/14-concurrent.ipynb"
+      - "14-microsoft-agent-framework/code-samples/14-conditional-workflow.ipynb"
+      - "14-microsoft-agent-framework/code-samples/14-handoff.ipynb"
+      - "14-microsoft-agent-framework/code-samples/14-human-loop.ipynb"
+      - "14-microsoft-agent-framework/code-samples/14-middleware.ipynb"
+      - "14-microsoft-agent-framework/code-samples/14-sequential.ipynb"
+    role: "supplement"
+    review_status: "pending"
+  - source: "supplementary"
+    lesson: "15-browser-use"
+    readme: "15-browser-use/README.md"
+    notebooks:
+      - "15-browser-use/15-browser-user.ipynb"
+    role: "supplement"
+    review_status: "pending"
+  - source: "supplementary"
+    lesson: "16-deploying-scalable-agents"
+    readme: "16-deploying-scalable-agents/README.md"
+    notebooks:
+      - "16-deploying-scalable-agents/code_samples/16-python-agent-framework.ipynb"
+    role: "supplement"
+    review_status: "pending"
+  - source: "supplementary"
+    lesson: "17-creating-local-ai-agents"
+    readme: "17-creating-local-ai-agents/README.md"
+    notebooks:
+      - "17-creating-local-ai-agents/code_samples/17-local-agent-foundry-local.ipynb"
+    role: "supplement"
+    review_status: "pending"
+  - source: "supplementary"
+    lesson: "18-securing-ai-agents"
+    readme: "18-securing-ai-agents/README.md"
+    notebooks:
+      - "18-securing-ai-agents/code_samples/18-signed-receipts.ipynb"
+      - "18-securing-ai-agents/code_samples/human-authorization-receipts.ipynb"
+    role: "supplement"
+    review_status: "pending"
+experiment_cards:
+  []

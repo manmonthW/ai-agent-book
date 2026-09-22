@@ -1,0 +1,120 @@
+site_name: AI Agent蓝皮书
+site_description: 从架构选择、执行控制到评估、安全与持续演进的厂商中立工程手册
+site_url: "https://www.keaimentor.com/bluebook/"
+docs_dir: site
+site_dir: ../dist/site
+use_directory_urls: true
+strict: true
+
+theme:
+  name: material
+  language: zh
+  custom_dir: overrides
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: 切换深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: 切换浅色模式
+  font: false
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tooltips
+
+plugins:
+  - search:
+      lang:
+        - ja
+        - en
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_css:
+  - assets/bluebook.css
+extra_javascript:
+  - assets/bluebook.js
+
+nav:
+  - 首页: index.md
+  - 主册:
+      - 阅读说明: chapters/index.md
+      - 第0章 执行摘要: chapters/00-executive-summary.md
+      - 第一篇 认知与架构选择:
+          - 第1章 定义与边界: chapters/01-definition-and-boundaries.md
+          - 第2章 什么时候使用Agent: chapters/02-when-to-use-agents.md
+          - 第3章 Runtime与执行图: chapters/03-agent-runtime.md
+      - 第二篇 核心能力:
+          - 第4章 上下文工程: chapters/04-context-engineering.md
+          - 第5章 Memory、RAG与知识: chapters/05-memory-rag-knowledge.md
+          - 第6章 工具与协议: chapters/06-tools-protocols.md
+          - 第7章 Coding Agent: chapters/07-coding-agent.md
+          - 第8章 多模态交互: chapters/08-multimodal-interaction.md
+      - 第三篇 生产控制面:
+          - 第9章 Harness: chapters/09-production-harness.md
+          - 第10章 评估与可观测性: chapters/10-evaluation-observability.md
+          - 第11章 安全治理: chapters/11-security-governance.md
+      - 第四篇 能力提升:
+          - 第12章 持续演进: chapters/12-continuous-evolution.md
+          - 第13章 模型后训练: chapters/13-post-training.md
+          - 第14章 多Agent: chapters/14-multi-agent.md
+      - 结语 组织采用路线图: chapters/conclusion-adoption-roadmap.md
+  - 架构模式:
+      - 模式手册: patterns/index.md
+      - P01 最低充分自主性: patterns/P01-minimum-sufficient-autonomy.md
+      - P02 模型与程序职责分离: patterns/P02-model-program-separation.md
+      - P03 有界执行循环: patterns/P03-bounded-loop.md
+      - P04 类型化状态: patterns/P04-typed-state.md
+      - P05 Checkpoint与恢复: patterns/P05-checkpoint-recovery.md
+      - P06 幂等副作用: patterns/P06-idempotent-side-effects.md
+      - P07 准确载荷审批: patterns/P07-exact-payload-approval.md
+      - P08 工具策略网关: patterns/P08-tool-policy-gateway.md
+      - P09 稳定前缀: patterns/P09-stable-prefix.md
+      - P10 Context与Artifact: patterns/P10-context-artifact.md
+      - P11 权限感知RAG: patterns/P11-permission-aware-rag.md
+      - P12 治理化Memory: patterns/P12-governed-memory.md
+      - P13 Proposer–Reviewer–Verifier: patterns/P13-proposer-reviewer-verifier.md
+      - P14 快慢路径: patterns/P14-fast-slow-path.md
+      - P15 Safe Point与取消: patterns/P15-safe-point-cancellation.md
+      - P16 四级质量门: patterns/P16-four-level-quality-gates.md
+      - P17 失败回流闭环: patterns/P17-failure-regression-loop.md
+      - P18 外部能力优先更新: patterns/P18-external-first-update.md
+      - P19 独立Agent工作区: patterns/P19-isolated-agent-workspace.md
+      - P20 多Agent准入: patterns/P20-multi-agent-admission.md
+  - 实验图谱:
+      - 实验目录: experiments/index.md
+  - 数字附录:
+      - 附录入口: appendices/index.md
+      - 章节—模式—实验索引: appendices/cross-reference.md
+      - 版本记录: appendices/changelog.md

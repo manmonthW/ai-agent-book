@@ -1,0 +1,83 @@
+version: 1
+status: reviewed_seed
+figures:
+  - id: bluebook-system-overview
+    target: chapters/00-executive-summary.md
+    action: redraw
+    sources:
+      - book/images/fig0-1.svg
+      - book/images/fig1-1.svg
+    reason: 合并 Agent 三要素、Environment 闭环和 Model–Harness 控制面，避免两张图概念重复。
+    license: Apache-2.0 repository asset
+  - id: autonomy-ladder
+    target: chapters/02-when-to-use-agents.md
+    action: create
+    sources:
+      - book/chapter1.md
+      - ../ai-agents-for-beginners/03-agentic-design-patterns/README.md
+    reason: 原库没有统一的最低充分自主性决策图。
+    license: original_bluebook
+  - id: workflow-patterns
+    target: chapters/03-agent-runtime.md
+    action: adapt_collection
+    sources:
+      - book/images/fig1-wf-chaining.svg
+      - book/images/fig1-wf-routing.svg
+      - book/images/fig1-wf-parallel.svg
+      - book/images/fig1-wf-orchestrator.svg
+      - book/images/fig1-wf-evaluator.svg
+    reason: 统一成一张模式矩阵，降低重复。
+    license: Apache-2.0 repository assets
+  - id: context-lifecycle
+    target: chapters/04-context-engineering.md
+    action: redraw
+    sources:
+      - book/images/fig1-4.svg
+      - book/images/fig2-13.svg
+      - book/images/fig2-16.svg
+    reason: 展示稳定前缀、动态轨迹、压缩和Artifact引用。
+    license: Apache-2.0 repository assets
+  - id: context-failure-matrix
+    target: chapters/04-context-engineering.md
+    action: create
+    sources:
+      - ../ai-agents-for-beginners/12-context-engineering/README.md
+      - book/chapter2.md
+    reason: 汇总 Poisoning、Distraction、Confusion、Clash 和 Prompt Injection。
+    license: original_bluebook_with_citations
+  - id: production-control-plane
+    target: chapters/09-production-harness.md
+    action: create
+    sources:
+      - book/chapter1.md
+      - book/chapter7.md
+      - book/chapter9.md
+      - book/chapter10.md
+      - ../ai-agents-for-beginners/10-ai-agents-production/README.md
+    reason: 统一状态、预算、权限、验证、恢复和审计。
+    license: original_bluebook_with_citations
+  - id: quality-gates
+    target: chapters/10-evaluation-observability.md
+    action: redraw
+    sources:
+      - book/images/fig7-4.svg
+      - ../ai-agents-for-beginners/10-ai-agents-production/README.md
+      - ../ai-agents-for-beginners/tests/README.md
+    reason: 形成 Unit/Schema → Smoke → Offline → Online 四级质量门。
+    license: original_bluebook_with_citations
+  - id: security-action-chain
+    target: chapters/11-security-governance.md
+    action: create
+    sources:
+      - ../ai-agents-for-beginners/06-building-trustworthy-agents/README.md
+      - ../ai-agents-for-beginners/18-securing-ai-agents/README.md
+      - book/chapter4.md
+    reason: 展示提议、验证、授权、审批、执行、回执和审计链。
+    license: original_bluebook_with_citations
+excluded:
+  - pattern: translated_images/**
+    reason: 翻译镜像不作为中文蓝皮书源资产。
+  - pattern: chapter*/**/outputs/**
+    reason: 实验输出只作为证据，不直接进入主文，除非逐项评审。
+  - pattern: product_screenshot
+    reason: 必须核验版本、商标和截图许可后再决定。

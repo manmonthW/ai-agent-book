@@ -1,0 +1,91 @@
+version: 1
+status: reviewed_seed
+scope:
+  - chapter: 0
+    name: 执行摘要
+  - chapter: 2
+    name: 什么时候应该使用 Agent
+  - chapter: 4
+    name: 上下文工程
+  - chapters: [9, 10, 11]
+    name: 生产控制面样章
+claims:
+  - id: core-formula
+    disposition: retain_as_framework
+    wording: Agent = LLM + 上下文 + 工具，是工程组件抽象，不是严格数学等式。
+    evidence:
+      - book/introduction.md
+      - book/chapter1.md
+      - experiment: 1-1
+        evidence_path: chapter1/context/validation/latest.json
+    limitations: 环境位于 Agent 边界之外；生产系统还需要 Harness 控制面。
+  - id: lowest-sufficient-autonomy
+    disposition: retain_as_recommendation
+    wording: 优先选择能满足可验证成功条件的最低自主性架构。
+    evidence:
+      - book/chapter1.md
+      - ../ai-agents-for-beginners/01-intro-to-ai-agents/README.md
+      - ../ai-agents-for-beginners/07-planning-design/README.md
+    evidence_level: E0
+    limitations: 架构建议，需要由具体场景评估验证。
+  - id: context-capability
+    disposition: retain_with_qualification
+    wording: 上下文决定模型在当前决策点可见的信息；不同组件的重要性必须通过任务和模型实测。
+    evidence:
+      - experiment: 1-1
+        evidence_path: chapter1/context/validation/latest.json
+      - experiment: 2-3
+        evidence_path: chapter2/kv-cache/result_*_20260718_kimi_k2_6.json
+      - experiment: 2-10
+        evidence_path: chapter2/context-compression/results/kimi_k3_real_20260718.json
+    evidence_level: E4
+    limitations: 不写成“每个组件都不可或缺”；reasoning 历史移除在现有运行中未退化。
+  - id: production-control-plane
+    disposition: retain_as_synthesis
+    wording: 生产 Agent 需要在模型外显式管理状态、权限、预算、验证、恢复和审计。
+    evidence:
+      - book/chapter1.md
+      - book/chapter7.md
+      - book/chapter9.md
+      - book/chapter10.md
+      - ../ai-agents-for-beginners/10-ai-agents-production/README.md
+      - ../ai-agents-for-beginners/16-deploying-scalable-agents/README.md
+    evidence_level: E0
+    limitations: 蓝皮书综合架构，不声称来自单一论文。
+  - id: offline-online-loop
+    disposition: retain
+    wording: 离线评估用于可重复比较，在线评估用于发现真实分布中的未知失败；线上失败应回流离线集。
+    evidence:
+      - book/chapter7.md
+      - ../ai-agents-for-beginners/10-ai-agents-production/README.md
+    evidence_level: E5
+    limitations: 线上标签可能稀疏或偏置，需要人工和业务结果校准。
+  - id: prompt-not-auth
+    disposition: retain
+    wording: Prompt、Skill 和工具描述只能影响模型行为，不能取代代码层身份、授权和策略执行。
+    evidence:
+      - book/chapter2.md
+      - book/chapter4.md
+      - ../ai-agents-for-beginners/06-building-trustworthy-agents/README.md
+    evidence_level: E5
+  - id: receipts-boundary
+    disposition: retain_with_standard_reference
+    wording: 签名和哈希链可以提供归属、完整性和顺序证据，但不能证明动作正确、政策实际执行或输入真实。
+    evidence:
+      - ../ai-agents-for-beginners/18-securing-ai-agents/README.md
+      - reference: rfc8785
+    evidence_level: E5
+    limitations: 发布前补齐 Ed25519 标准引用；密码学回执是审计层，不是治理全体。
+rejected_or_deferred:
+  - claim: 启用 TODO 后平均15次迭代、禁用为21次
+    source: book/chapter2.md
+    disposition: defer
+    reason: 当前实验台账明确提示部分历史百分比/点估计未复现，样章不使用该数字。
+  - claim: Prompt Injection 逐层防御必然降低成功率
+    source: book/chapter2.md
+    disposition: rewrite
+    reason: 实验2-5全部配置观察到0%攻击成功率，只能说明本次活动完成，不能证明方向性效果。
+  - claim: 每个上下文组件都不可或缺
+    source: book/chapter1.md
+    disposition: reject_absolute
+    reason: 实验1-1显示移除保留的reasoning历史仍可正确完成。

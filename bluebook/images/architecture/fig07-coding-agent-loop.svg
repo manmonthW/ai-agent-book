@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="t d"><title id="t">fig07-coding-agent-loop</title><desc id="d">AI Agent蓝皮书架构概念图，可编辑源为Excalidraw。</desc><defs><filter id="shadow"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#172B4D" flood-opacity=".10"/></filter><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3z" fill="#42526E"/></marker></defs><rect width="100%" height="100%" fill="#F7F8FA"/>
+<text x="64" y="49.0" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="500" fill="#4C9AFF">BLUEBOOK  /  CHAPTER 07</text>
+<text x="64" y="97.0" font-family="Inter,Arial,sans-serif" font-size="31" font-weight="700" fill="#172B4D">Coding Agent验证闭环</text>
+<text x="66" y="129.0" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="500" fill="#6B778C">每次失败都带来新证据；测试通过和Artifact可打开才算完成</text>
+<polyline points="64,154 1336,154" fill="none" stroke="#EBECF0" stroke-width="2"/>
+<rect x="40" y="250" width="185" height="105" rx="14" fill="#EBECF0" stroke="#42526E" stroke-width="2" filter="url(#shadow)"/>
+<text x="132.5" y="290.98" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#42526E">需求</text>
+<text x="132.5" y="314.02000000000004" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#42526E">Contract</text>
+<rect x="265" y="250" width="185" height="105" rx="14" fill="#DEEBFF" stroke="#4C9AFF" stroke-width="2" filter="url(#shadow)"/>
+<text x="357.5" y="290.98" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#4C9AFF">搜索</text>
+<text x="357.5" y="314.02000000000004" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#4C9AFF">Search</text>
+<polyline points="225,302 265,302" fill="none" stroke="#42526E" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="490" y="250" width="185" height="105" rx="14" fill="#DEEBFF" stroke="#4C9AFF" stroke-width="2" filter="url(#shadow)"/>
+<text x="582.5" y="290.98" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#4C9AFF">读取</text>
+<text x="582.5" y="314.02000000000004" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#4C9AFF">Read</text>
+<polyline points="450,302 490,302" fill="none" stroke="#42526E" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="715" y="250" width="185" height="105" rx="14" fill="#FFF0B3" stroke="#FF991F" stroke-width="2" filter="url(#shadow)"/>
+<text x="807.5" y="290.98" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#FF991F">补丁</text>
+<text x="807.5" y="314.02000000000004" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#FF991F">Patch</text>
+<polyline points="675,302 715,302" fill="none" stroke="#42526E" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="940" y="250" width="185" height="105" rx="14" fill="#E3FCEF" stroke="#00875A" stroke-width="2" filter="url(#shadow)"/>
+<text x="1032.5" y="290.98" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#00875A">测试 / 渲染</text>
+<text x="1032.5" y="314.02000000000004" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#00875A">Evidence</text>
+<polyline points="900,302 940,302" fill="none" stroke="#42526E" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1165" y="250" width="185" height="105" rx="14" fill="#FFEBE6" stroke="#DE350B" stroke-width="2" filter="url(#shadow)"/>
+<text x="1257.5" y="290.98" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#DE350B">诊断</text>
+<text x="1257.5" y="314.02000000000004" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#DE350B">Diagnose</text>
+<polyline points="1125,302 1165,302" fill="none" stroke="#42526E" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1257,250 1257,205 807,205 807,250" fill="none" stroke="#DE350B" stroke-width="2" stroke-dasharray="9 7" marker-end="url(#arrow)"/>
+<text x="915" y="182.0" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="500" fill="#DE350B">FIX WITH NEW EVIDENCE</text>
+<rect x="425" y="665" width="300" height="100" rx="14" fill="#E3FCEF" stroke="#00875A" stroke-width="2" filter="url(#shadow)"/>
+<text x="575.0" y="702.2" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="20" fill="#00875A">VERIFY</text>
+<text x="575.0" y="727.8000000000001" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="20" fill="#00875A">验收条件 · Diff</text>
+<rect x="930" y="665" width="300" height="100" rx="14" fill="#EAE6FF" stroke="#6554C0" stroke-width="2" filter="url(#shadow)"/>
+<text x="1080.0" y="702.2" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="20" fill="#6554C0">DONE</text>
+<text x="1080.0" y="727.8000000000001" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="20" fill="#6554C0">Artifact可重新打开</text>
+<polyline points="725,715 930,715" fill="none" stroke="#42526E" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1032,355 1032,510 575,510 575,665" fill="none" stroke="#42526E" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="180" y="810" width="1040" height="55" rx="14" fill="#EBECF0" stroke="#42526E" stroke-width="2" filter="url(#shadow)"/>
+<text x="700.0" y="837.5" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="17" fill="#42526E">ISOLATED WORKSPACE  ·  SANDBOX  ·  ARTIFACT  ·  TRACE</text>
+</svg>

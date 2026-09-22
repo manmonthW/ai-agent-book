@@ -1,0 +1,1424 @@
+version: 1
+status: "curated_seed"
+units:
+  - id: "primary:book/introduction.md"
+    source: "primary"
+    path: "book/introduction.md"
+    targets:
+      - 0
+      - 1
+    action: "rewrite"
+    role: "primary"
+    review_status: "reviewed_structure"
+    sections:
+      - level: 1
+        title: "引言 {.unnumbered}"
+        line: 1
+      - level: 2
+        title: "全书结构 {.unnumbered}"
+        line: 37
+      - level: 2
+        title: "如何阅读本书 {.unnumbered}"
+        line: 54
+      - level: 2
+        title: "前置知识 {.unnumbered}"
+        line: 77
+      - level: 2
+        title: "致谢 {.unnumbered}"
+        line: 99
+  - id: "primary:book/chapter1.md"
+    source: "primary"
+    path: "book/chapter1.md"
+    targets:
+      - 1
+      - 2
+      - 3
+      - 9
+    action: "split_rewrite"
+    role: "primary"
+    review_status: "reviewed_structure"
+    sections:
+      - level: 1
+        title: "AI Agent 入门"
+        line: 1
+      - level: 2
+        title: "现代 Agent = LLM + 上下文 + 工具"
+        line: 11
+      - level: 2
+        title: "Harness 工程：模型之外的竞争力"
+        line: 263
+      - level: 2
+        title: "贯穿全书的设计模式"
+        line: 525
+      - level: 2
+        title: "本章小结"
+        line: 539
+      - level: 2
+        title: "思考题"
+        line: 561
+  - id: "primary:book/chapter2.md"
+    source: "primary"
+    path: "book/chapter2.md"
+    targets:
+      - 4
+      - 11
+    action: "split_rewrite"
+    role: "primary"
+    review_status: "reviewed_structure"
+    sections:
+      - level: 1
+        title: "上下文工程"
+        line: 1
+      - level: 2
+        title: "上下文：决定 Agent 能力上限的关键"
+        line: 7
+      - level: 2
+        title: "Agent 如何调用大模型：理解 API 的上下文结构"
+        line: 41
+      - level: 2
+        title: "KV Cache 友好的上下文设计"
+        line: 435
+      - level: 2
+        title: "提示工程：优化系统提示词"
+        line: 596
+      - level: 2
+        title: "动态提示词与 Agent Skills"
+        line: 759
+      - level: 2
+        title: "Agent 状态栏：通过元信息增强 Agent 轨迹管理"
+        line: 851
+      - level: 2
+        title: "上下文压缩策略"
+        line: 985
+      - level: 2
+        title: "本章小结"
+        line: 1089
+      - level: 2
+        title: "思考题"
+        line: 1095
+  - id: "primary:book/chapter3.md"
+    source: "primary"
+    path: "book/chapter3.md"
+    targets:
+      - 5
+    action: "rewrite"
+    role: "primary"
+    review_status: "reviewed_structure"
+    sections:
+      - level: 1
+        title: "用户记忆和知识库"
+        line: 1
+      - level: 2
+        title: "用户记忆系统"
+        line: 15
+      - level: 2
+        title: "RAG 基础：构建 Agent 的知识获取管道"
+        line: 243
+      - level: 2
+        title: "超越扁平文本：知识的组织与检索"
+        line: 424
+      - level: 2
+        title: "本章小结"
+        line: 677
+      - level: 2
+        title: "思考题"
+        line: 687
+  - id: "primary:book/chapter4.md"
+    source: "primary"
+    path: "book/chapter4.md"
+    targets:
+      - 6
+      - 11
+    action: "split_rewrite"
+    role: "primary"
+    review_status: "reviewed_structure"
+    sections:
+      - level: 1
+        title: "工具"
+        line: 1
+      - level: 2
+        title: "工具的分类"
+        line: 7
+      - level: 2
+        title: "工具设计的通用原则"
+        line: 34
+      - level: 2
+        title: "工具生态：MCP 与 Skill Hub"
+        line: 100
+      - level: 2
+        title: "工具太多怎么办：层次化组织与主动工具发现"
+        line: 133
+      - level: 2
+        title: "感知工具"
+        line: 218
+      - level: 2
+        title: "执行工具"
+        line: 270
+      - level: 2
+        title: "协作工具"
+        line: 382
+      - level: 2
+        title: "本章小结"
+        line: 429
+      - level: 2
+        title: "思考题"
+        line: 443
+  - id: "primary:book/chapter5.md"
+    source: "primary"
+    path: "book/chapter5.md"
+    targets:
+      - 7
+    action: "rewrite"
+    role: "primary"
+    review_status: "reviewed_structure"
+    sections:
+      - level: 1
+        title: "Coding Agent 与通用 Agent"
+        line: 1
+      - level: 2
+        title: "Coding Agent"
+        line: 13
+      - level: 2
+        title: "代码：通用 Agent 的元能力"
+        line: 351
+      - level: 2
+        title: "本章小结"
+        line: 775
+      - level: 2
+        title: "思考题"
+        line: 794
+  - id: "primary:book/chapter6.md"
+    source: "primary"
+    path: "book/chapter6.md"
+    targets:
+      - 8
+      - 9
+      - 11
+    action: "split_rewrite"
+    role: "primary"
+    review_status: "reviewed_structure"
+    sections:
+      - level: 1
+        title: "交互：观察与动作空间的扩展"
+        line: 1
+      - level: 2
+        title: "模态与触发时机的扩展"
+        line: 5
+      - level: 2
+        title: "异步与事件驱动：当世界主动找上门"
+        line: 29
+      - level: 2
+        title: "语音：最自然的人机接口"
+        line: 307
+      - level: 2
+        title: "Computer Use：GUI 自动化 Agent"
+        line: 460
+      - level: 2
+        title: "机器人操作：以 XLeRobot 整理桌面为例"
+        line: 585
+      - level: 2
+        title: "本章小结"
+        line: 736
+      - level: 2
+        title: "思考题"
+        line: 763
+  - id: "primary:book/chapter7.md"
+    source: "primary"
+    path: "book/chapter7.md"
+    targets:
+      - 10
+    action: "rewrite"
+    role: "primary"
+    review_status: "reviewed_structure"
+    sections:
+      - level: 1
+        title: "Agent 的评估"
+        line: 1
+      - level: 2
+        title: "一条评估任务的解剖：τ²-bench 的 telecom 领域"
+        line: 27
+      - level: 2
+        title: "评估指标：成功的定义"
+        line: 129
+      - level: 2
+        title: "评估环境"
+        line: 162
+      - level: 2
+        title: "评估数据集的设计"
+        line: 203
+      - level: 2
+        title: "自动化评估方法"
+        line: 288
+      - level: 2
+        title: "评估驱动的模型选型"
+        line: 558
+      - level: 2
+        title: "评估结果的统计显著性"
+        line: 672
+      - level: 2
+        title: "Agent 的可观测性"
+        line: 698
+      - level: 2
+        title: "从 Benchmark 报告到系统改进"
+        line: 718
+      - level: 2
+        title: "从外部评估到内部评估：生产级 Agent 的评估基础设施"
+        line: 777
+      - level: 2
+        title: "仿真环境：从评估到后训练的桥梁"
+        line: 825
+      - level: 2
+        title: "本章小结"
+        line: 852
+      - level: 2
+        title: "思考题"
+        line: 866
+  - id: "primary:book/chapter8.md"
+    source: "primary"
+    path: "book/chapter8.md"
+    targets:
+      - 13
+    action: "rewrite"
+    role: "primary"
+    review_status: "reviewed_structure"
+    sections:
+      - level: 1
+        title: "模型后训练"
+        line: 1
+      - level: 2
+        title: "从预训练到 RL：四阶段全景"
+        line: 26
+      - level: 2
+        title: "从经典 RL Agent 到现代 Agent `[可选阅读]`"
+        line: 122
+      - level: 2
+        title: "模型预训练基础 `[可选阅读]`"
+        line: 250
+      - level: 2
+        title: "Mid-training：补知识与基础能力"
+        line: 276
+      - level: 2
+        title: "SFT（监督微调）"
+        line: 314
+      - level: 2
+        title: "SFT 数据合成：从示范到可训练轨迹"
+        line: 370
+      - level: 2
+        title: "何时选择 Mid-training、SFT 与 RL"
+        line: 386
+      - level: 2
+        title: "单轮强化学习：记忆与泛化的对照"
+        line: 410
+      - level: 2
+        title: "RL 算法：从 16 次 rollout 到一次参数更新"
+        line: 482
+      - level: 2
+        title: "RL 环境：从评估到仿真"
+        line: 530
+      - level: 2
+        title: "从单轮到多轮：任务场景与信用分配"
+        line: 564
+      - level: 2
+        title: "奖励设计：如何把任务目标变成学习信号"
+        line: 610
+      - level: 2
+        title: "蒸馏：提升样本效率"
+        line: 670
+      - level: 2
+        title: "从问题案例到后训练"
+        line: 733
+      - level: 2
+        title: "后训练实践要点"
+        line: 796
+      - level: 2
+        title: "本章小结"
+        line: 820
+      - level: 2
+        title: "思考题"
+        line: 864
+  - id: "primary:book/chapter9.md"
+    source: "primary"
+    path: "book/chapter9.md"
+    targets:
+      - 12
+    action: "rewrite"
+    role: "primary"
+    review_status: "reviewed_structure"
+    sections:
+      - level: 1
+        title: "Agent 的持续进化"
+        line: 1
+      - level: 2
+        title: "从运行轨迹中获得学习信号"
+        line: 19
+      - level: 2
+        title: "Agent 持续进化的四种方法"
+        line: 56
+      - level: 2
+        title: "构建可长期运行的持续进化闭环"
+        line: 286
+      - level: 2
+        title: "本章小结"
+        line: 405
+      - level: 2
+        title: "思考题"
+        line: 417
+  - id: "primary:book/chapter10.md"
+    source: "primary"
+    path: "book/chapter10.md"
+    targets:
+      - 14
+    action: "rewrite"
+    role: "primary"
+    review_status: "reviewed_structure"
+    sections:
+      - level: 1
+        title: "多 Agent 协作"
+        line: 1
+      - level: 2
+        title: "多 Agent 协作的分类框架"
+        line: 11
+      - level: 2
+        title: "多 Agent 何时真正优于单 Agent"
+        line: 46
+      - level: 2
+        title: "共享上下文的多 Agent 协作"
+        line: 79
+      - level: 2
+        title: "不共享上下文的多 Agent 协作"
+        line: 102
+      - level: 2
+        title: "多 Agent 协作的失败模式"
+        line: 523
+      - level: 2
+        title: "Agent 社会"
+        line: 581
+      - level: 2
+        title: "本章小结"
+        line: 714
+      - level: 2
+        title: "思考题"
+        line: 724
+  - id: "primary:book/afterword.md"
+    source: "primary"
+    path: "book/afterword.md"
+    targets:
+      - "conclusion"
+    action: "rewrite"
+    role: "primary"
+    review_status: "reviewed_structure"
+    sections:
+      - level: 1
+        title: "后记：回到 Agent = LLM + 上下文 + 工具 {.unnumbered}"
+        line: 1
+      - level: 2
+        title: "两朵乌云 {.unnumbered}"
+        line: 13
+      - level: 2
+        title: "模型与 Agent 的共同演进 {.unnumbered}"
+        line: 27
+  - id: "primary:book/reference-answers.md"
+    source: "primary"
+    path: "book/reference-answers.md"
+    targets:
+      - "appendix"
+    action: "adapt"
+    role: "support"
+    review_status: "reviewed_structure"
+    sections:
+      - level: 1
+        title: "思考题参考答案"
+        line: 1
+      - level: 2
+        title: "第一章 AI Agent 入门"
+        line: 5
+      - level: 2
+        title: "第二章 上下文工程"
+        line: 53
+      - level: 2
+        title: "第三章 用户记忆和知识库"
+        line: 91
+      - level: 2
+        title: "第四章 工具"
+        line: 131
+      - level: 2
+        title: "第五章 Coding Agent 与通用 Agent"
+        line: 149
+      - level: 2
+        title: "第六章 交互：观察与动作空间的扩展"
+        line: 190
+      - level: 2
+        title: "第七章 Agent 的评估"
+        line: 244
+      - level: 2
+        title: "第八章 模型后训练"
+        line: 284
+      - level: 2
+        title: "第九章 Agent 的持续进化"
+        line: 338
+      - level: 2
+        title: "第十章 多 Agent 协作"
+        line: 364
+  - id: "primary:docs/zh-CN/LEARNING.md"
+    source: "primary"
+    path: "docs/zh-CN/LEARNING.md"
+    targets:
+      - 0
+      - "reader-guide"
+    action: "adapt"
+    role: "support"
+    review_status: "reviewed_structure"
+    sections:
+      - level: 1
+        title: "学习建议"
+        line: 1
+      - level: 2
+        title: "核心理念：Agent = LLM + 上下文 + 工具"
+        line: 5
+      - level: 2
+        title: "学习路径"
+        line: 17
+      - level: 2
+        title: "正文与实验的分工"
+        line: 34
+      - level: 2
+        title: "难度分级"
+        line: 48
+      - level: 2
+        title: "实践建议"
+        line: 61
+  - id: "supplementary:00-course-setup"
+    source: "supplementary"
+    path: "00-course-setup/README.md"
+    targets:
+      - "digital-appendix"
+    action: "adapt"
+    role: "supplement"
+    review_status: "reviewed_structure"
+    sections:
+      - level: 1
+        title: "Course Setup"
+        line: 1
+      - level: 2
+        title: "Introduction"
+        line: 3
+      - level: 2
+        title: "Join Other Learners and Get Help"
+        line: 7
+      - level: 2
+        title: "Clone or Fork this Repo"
+        line: 11
+      - level: 2
+        title: "Running the Code"
+        line: 86
+      - level: 2
+        title: "Requirements"
+        line: 94
+      - level: 2
+        title: "Setup VSCode"
+        line: 139
+      - level: 2
+        title: "Set Up Microsoft Foundry and Microsoft Foundry Agent Service"
+        line: 145
+      - level: 2
+        title: "Optional Setup: Azure AI Search (Lessons 5 and 16)"
+        line: 230
+      - level: 2
+        title: "Additional Setup for Lessons that Call Azure OpenAI Directly (Lessons 6 and 8)"
+        line: 260
+      - level: 2
+        title: "Alternative Provider: MiniMax (OpenAI-Compatible)"
+        line: 272
+      - level: 2
+        title: "Alternative Provider: Novita AI (OpenAI-Compatible)"
+        line: 288
+      - level: 2
+        title: "Alternative Provider: Foundry Local (Run Models On-Device)"
+        line: 304
+      - level: 2
+        title: "Additional Setup for Lesson 8 (Bing Grounding Workflow)"
+        line: 356
+      - level: 2
+        title: "Troubleshooting"
+        line: 364
+      - level: 2
+        title: "Stuck Somewhere?"
+        line: 410
+      - level: 2
+        title: "Next Lesson"
+        line: 414
+  - id: "supplementary:01-intro-to-ai-agents"
+    source: "supplementary"
+    path: "01-intro-to-ai-agents/README.md"
+    targets:
+      - 0
+      - 1
+      - 2
+    action: "adapt"
+    role: "supplement"
+    review_status: "reviewed_structure"
+    sections:
+      - level: 1
+        title: "Introduction to AI Agents and Agent Use Cases"
+        line: 5
+      - level: 2
+        title: "Introduction"
+        line: 15
+      - level: 2
+        title: "Learning Goals"
+        line: 23
+      - level: 2
+        title: "Defining AI Agents and Types of AI Agents"
+        line: 33
+      - level: 2
+        title: "When to Use AI Agents"
+        line: 76
+      - level: 2
+        title: "Basics of Agentic Solutions"
+        line: 90
+      - level: 2
+        title: "Code Samples"
+        line: 120
+      - level: 2
+        title: "Got Questions?"
+        line: 129
+      - level: 2
+        title: "Smoke-Testing This Agent (Optional)"
+        line: 136
+      - level: 2
+        title: "Previous Lesson"
+        line: 142
+      - level: 2
+        title: "Next Lesson"
+        line: 146
+  - id: "supplementary:02-explore-agentic-frameworks"
+    source: "supplementary"
+    path: "02-explore-agentic-frameworks/README.md"
+    targets:
+      - 2
+      - 9
+      - "platform-appendix"
+    action: "adapt_case"
+    role: "supplement"
+    review_status: "reviewed_structure"
+    sections:
+      - level: 1
+        title: "Explore AI Agent Frameworks"
+        line: 5
+      - level: 2
+        title: "Introduction"
+        line: 11
+      - level: 2
+        title: "Learning goals"
+        line: 21
+      - level: 2
+        title: "What are AI Agent Frameworks and what do they enable developers to do?"
+        line: 30
+      - level: 2
+        title: "How to quickly prototype, iterate, and improve the agent’s capabilities?"
+        line: 51
+      - level: 2
+        title: "What are the differences between the Microsoft Agent Framework and Microsoft Foundry Agent Service?"
+        line: 163
+      - level: 2
+        title: "Microsoft Agent Framework (MAF)"
+        line: 167
+      - level: 2
+        title: "Microsoft Foundry Agent Service"
+        line: 235
+      - level: 2
+        title: "What's the difference between these approaches?"
+        line: 349
+      - level: 2
+        title: "Can I integrate my existing Azure ecosystem tools directly, or do I need standalone solutions?"
+        line: 382
+      - level: 2
+        title: "Sample Codes"
+        line: 388
+      - level: 2
+        title: "Got More Questions about AI Agent Frameworks?"
+        line: 394
+      - level: 2
+        title: "References"
+        line: 398
+      - level: 2
+        title: "Previous Lesson"
+        line: 404
+      - level: 2
+        title: "Next Lesson"
+        line: 408
+  - id: "supplementary:03-agentic-design-patterns"
+    source: "supplementary"
+    path: "03-agentic-design-patterns/README.md"
+    targets:
+      - 2
+      - 3
+      - "pattern-handbook"
+    action: "adapt"
+    role: "supplement"
+    review_status: "reviewed_structure"
+    sections:
+      - level: 1
+        title: "AI Agentic Design Principles"
+        line: 4
+      - level: 2
+        title: "Introduction"
+        line: 6
+      - level: 2
+        title: "This Lesson Will Cover"
+        line: 17
+      - level: 2
+        title: "Learning Goals"
+        line: 23
+      - level: 2
+        title: "The Agentic Design Principles"
+        line: 31
+      - level: 2
+        title: "The Guidelines to Implement These Principles"
+        line: 73
+      - level: 2
+        title: "How To Design a Travel Agent using These Principles and Guidelines"
+        line: 81
+      - level: 2
+        title: "Sample Codes"
+        line: 89
+      - level: 2
+        title: "Got More Questions about AI Agentic Design Patterns?"
+        line: 95
+      - level: 2
+        title: "Additional Resources"
+        line: 99
+      - level: 2
+        title: "Previous Lesson"
+        line: 105
+      - level: 2
+        title: "Next Lesson"
+        line: 109
+  - id: "supplementary:04-tool-use"
+    source: "supplementary"
+    path: "04-tool-use/README.md"
+    targets:
+      - 6
+    action: "adapt"
+    role: "supplement"
+    review_status: "reviewed_structure"
+    sections:
+      - level: 1
+        title: "Tool Use Design Pattern"
+        line: 5
+      - level: 2
+        title: "Introduction"
+        line: 9
+      - level: 2
+        title: "Learning Goals"
+        line: 18
+      - level: 2
+        title: "What is the Tool Use Design Pattern?"
+        line: 27
+      - level: 2
+        title: "What are the use cases it can be applied to?"
+        line: 31
+      - level: 2
+        title: "What are the elements/building blocks needed to implement the tool use design pattern?"
+        line: 41
+      - level: 2
+        title: "Tool Use Examples with Agentic Frameworks"
+        line: 204
+      - level: 2
+        title: "What are the special considerations for using the Tool Use Design Pattern to build trustworthy AI agents?"
+        line: 302
+      - level: 2
+        title: "Sample Codes"
+        line: 308
+      - level: 2
+        title: "Got More Questions about the Tool Use Design Patterns?"
+        line: 313
+      - level: 2
+        title: "Additional Resources"
+        line: 317
+      - level: 2
+        title: "Smoke-Testing This Agent (Optional)"
+        line: 323
+      - level: 2
+        title: "Previous Lesson"
+        line: 327
+      - level: 2
+        title: "Next Lesson"
+        line: 331
+  - id: "supplementary:05-agentic-rag"
+    source: "supplementary"
+    path: "05-agentic-rag/README.md"
+    targets:
+      - 5
+    action: "adapt"
+    role: "supplement"
+    review_status: "reviewed_structure"
+    sections:
+      - level: 1
+        title: "Agentic RAG"
+        line: 5
+      - level: 2
+        title: "Introduction"
+        line: 9
+      - level: 2
+        title: "Learning Goals"
+        line: 17
+      - level: 2
+        title: "What is Agentic RAG?"
+        line: 31
+      - level: 2
+        title: "Defining Agentic Retrieval-Augmented Generation (Agentic RAG)"
+        line: 37
+      - level: 2
+        title: "Owning the Reasoning Process"
+        line: 45
+      - level: 2
+        title: "Iterative Loops, Tool Integration, and Memory"
+        line: 58
+      - level: 2
+        title: "Handling Failure Modes and Self-Correction"
+        line: 72
+      - level: 2
+        title: "Boundaries of Agency"
+        line: 84
+      - level: 2
+        title: "Practical Use Cases and Value"
+        line: 93
+      - level: 2
+        title: "Governance, Transparency, and Trust"
+        line: 101
+      - level: 2
+        title: "Conclusion"
+        line: 113
+      - level: 2
+        title: "Additional Resources"
+        line: 121
+      - level: 2
+        title: "Smoke-Testing This Agent (Optional)"
+        line: 140
+      - level: 2
+        title: "Previous Lesson"
+        line: 144
+      - level: 2
+        title: "Next Lesson"
+        line: 148
+  - id: "supplementary:06-building-trustworthy-agents"
+    source: "supplementary"
+    path: "06-building-trustworthy-agents/README.md"
+    targets:
+      - 11
+    action: "adapt"
+    role: "supplement"
+    review_status: "reviewed_structure"
+    sections:
+      - level: 1
+        title: "Building Trustworthy AI Agents"
+        line: 5
+      - level: 2
+        title: "Introduction"
+        line: 7
+      - level: 2
+        title: "Learning Goals"
+        line: 15
+      - level: 2
+        title: "Safety"
+        line: 23
+      - level: 2
+        title: "Understanding Threats"
+        line: 120
+      - level: 2
+        title: "Human-in-the-Loop"
+        line: 156
+      - level: 2
+        title: "Conclusion"
+        line: 191
+      - level: 2
+        title: "Code Samples"
+        line: 195
+      - level: 2
+        title: "Additional Resources"
+        line: 204
+      - level: 2
+        title: "Previous Lesson"
+        line: 211
+      - level: 2
+        title: "Next Lesson"
+        line: 215
+  - id: "supplementary:07-planning-design"
+    source: "supplementary"
+    path: "07-planning-design/README.md"
+    targets:
+      - 3
+      - "pattern-handbook"
+    action: "adapt"
+    role: "supplement"
+    review_status: "reviewed_structure"
+    sections:
+      - level: 1
+        title: "Planning Design"
+        line: 5
+      - level: 2
+        title: "Introduction"
+        line: 7
+      - level: 2
+        title: "Learning Goals"
+        line: 15
+      - level: 2
+        title: "Defining the Overall Goal and Breaking Down a Task"
+        line: 24
+      - level: 2
+        title: "Summary"
+        line: 261
+      - level: 2
+        title: "Additional Resources"
+        line: 265
+      - level: 2
+        title: "Previous Lesson"
+        line: 273
+      - level: 2
+        title: "Next Lesson"
+        line: 277
+  - id: "supplementary:08-multi-agent"
+    source: "supplementary"
+    path: "08-multi-agent/README.md"
+    targets:
+      - 14
+    action: "adapt"
+    role: "supplement"
+    review_status: "reviewed_structure"
+    sections:
+      - level: 1
+        title: "Multi-agent design patterns"
+        line: 5
+      - level: 2
+        title: "Introduction"
+        line: 9
+      - level: 2
+        title: "Learning Goals"
+        line: 18
+      - level: 2
+        title: "Scenarios Where Multi-Agents Are Applicable"
+        line: 32
+      - level: 2
+        title: "Advantages of Using Multi-Agents Over a Singular Agent"
+        line: 40
+      - level: 2
+        title: "Building Blocks of Implementing the Multi-Agent Design Pattern"
+        line: 52
+      - level: 2
+        title: "Visibility into Multi-Agent Interactions"
+        line: 65
+      - level: 2
+        title: "Multi-Agent Patterns"
+        line: 79
+      - level: 2
+        title: "Scenario: Refund process"
+        line: 117
+      - level: 2
+        title: "Assignment"
+        line: 148
+      - level: 2
+        title: "Solution"
+        line: 156
+      - level: 2
+        title: "Knowledge checks"
+        line: 160
+      - level: 2
+        title: "Summary"
+        line: 180
+      - level: 2
+        title: "Additional resources"
+        line: 188
+      - level: 2
+        title: "Previous Lesson"
+        line: 194
+      - level: 2
+        title: "Next Lesson"
+        line: 198
+  - id: "supplementary:09-metacognition"
+    source: "supplementary"
+    path: "09-metacognition/README.md"
+    targets:
+      - 3
+      - 5
+      - 7
+      - 12
+    action: "adapt"
+    role: "supplement"
+    review_status: "reviewed_structure"
+    sections:
+      - level: 1
+        title: "Metacognition in AI Agents"
+        line: 4
+      - level: 2
+        title: "Introduction"
+        line: 6
+      - level: 2
+        title: "Learning Goals"
+        line: 10
+      - level: 2
+        title: "Introduction to Metacognition"
+        line: 18
+      - level: 2
+        title: "Components of an AI Agent"
+        line: 48
+      - level: 2
+        title: "2. Planning in Agents"
+        line: 146
+      - level: 2
+        title: "3. Corrective RAG System"
+        line: 241
+      - level: 2
+        title: "4. Generating Code as a Tool"
+        line: 970
+      - level: 2
+        title: "Previous Lesson"
+        line: 1428
+      - level: 2
+        title: "Next Lesson"
+        line: 1432
+  - id: "supplementary:10-ai-agents-production"
+    source: "supplementary"
+    path: "10-ai-agents-production/README.md"
+    targets:
+      - 9
+      - 10
+    action: "adapt"
+    role: "supplement"
+    review_status: "reviewed_structure"
+    sections:
+      - level: 1
+        title: "AI Agents in Production: Observability & Evaluation"
+        line: 1
+      - level: 2
+        title: "Learning Goals"
+        line: 7
+      - level: 2
+        title: "Traces and Spans"
+        line: 20
+      - level: 2
+        title: "Why Observability Matters in Production Environments"
+        line: 32
+      - level: 2
+        title: "Key Metrics to Track"
+        line: 41
+      - level: 2
+        title: "Instrument your Agent"
+        line: 63
+      - level: 2
+        title: "Agent Evaluation"
+        line: 98
+      - level: 2
+        title: "Common Issues"
+        line: 134
+      - level: 2
+        title: "Managing Costs"
+        line: 147
+      - level: 2
+        title: "Lets see how this works in practice"
+        line: 157
+      - level: 2
+        title: "Previous Lesson"
+        line: 166
+      - level: 2
+        title: "Next Lesson"
+        line: 170
+  - id: "supplementary:11-agentic-protocols"
+    source: "supplementary"
+    path: "11-agentic-protocols/README.md"
+    targets:
+      - 6
+      - 14
+    action: "adapt"
+    role: "supplement"
+    review_status: "reviewed_structure"
+    sections:
+      - level: 1
+        title: "Using Agentic Protocols (MCP, A2A and NLWeb)"
+        line: 1
+      - level: 2
+        title: "Introduction"
+        line: 9
+      - level: 2
+        title: "Learning Goals"
+        line: 19
+      - level: 2
+        title: "Model Context Protocol"
+        line: 27
+      - level: 2
+        title: "Agent-to-Agent Protocol (A2A)"
+        line: 77
+      - level: 2
+        title: "Natural Language Web (NLWeb)"
+        line: 132
+      - level: 2
+        title: "Resources"
+        line: 170
+      - level: 2
+        title: "Previous Lesson"
+        line: 177
+      - level: 2
+        title: "Next Lesson"
+        line: 181
+  - id: "supplementary:12-context-engineering"
+    source: "supplementary"
+    path: "12-context-engineering/README.md"
+    targets:
+      - 4
+    action: "adapt"
+    role: "supplement"
+    review_status: "reviewed_structure"
+    sections:
+      - level: 1
+        title: "Context Engineering for AI Agents"
+        line: 1
+      - level: 2
+        title: "Introduction"
+        line: 11
+      - level: 2
+        title: "Learning Goals"
+        line: 21
+      - level: 2
+        title: "What is Context Engineering?"
+        line: 33
+      - level: 2
+        title: "Strategies for Effective Context Engineering"
+        line: 59
+      - level: 2
+        title: "Common Context Failures"
+        line: 129
+      - level: 2
+        title: "Got More Questions About Context Engineering?"
+        line: 171
+      - level: 2
+        title: "Previous Lesson"
+        line: 174
+      - level: 2
+        title: "Next Lesson"
+        line: 178
+  - id: "supplementary:13-agent-memory"
+    source: "supplementary"
+    path: "13-agent-memory/README.md"
+    targets:
+      - 5
+      - 12
+    action: "adapt"
+    role: "supplement"
+    review_status: "reviewed_structure"
+    sections:
+      - level: 1
+        title: "Memory for AI Agents"
+        line: 1
+      - level: 2
+        title: "Introduction"
+        line: 8
+      - level: 2
+        title: "Available Implementations"
+        line: 18
+      - level: 2
+        title: "Learning Goals"
+        line: 26
+      - level: 2
+        title: "Understanding AI Agent Memory"
+        line: 36
+      - level: 2
+        title: "Implementing and Storing Memory"
+        line: 117
+      - level: 2
+        title: "Making AI Agents Self-Improve"
+        line: 145
+      - level: 2
+        title: "Got More Questions About Agent Memory?"
+        line: 163
+      - level: 2
+        title: "Previous Lesson"
+        line: 166
+      - level: 2
+        title: "Next Lesson"
+        line: 170
+  - id: "supplementary:14-microsoft-agent-framework"
+    source: "supplementary"
+    path: "14-microsoft-agent-framework/README.md"
+    targets:
+      - 9
+      - "platform-appendix"
+    action: "adapt_case"
+    role: "supplement"
+    review_status: "reviewed_structure"
+    sections:
+      - level: 1
+        title: "Exploring Microsoft Agent Framework"
+        line: 1
+      - level: 2
+        title: "Learning Goals"
+        line: 13
+      - level: 2
+        title: "Code Samples"
+        line: 21
+      - level: 2
+        title: "Understanding Microsoft Agent Framework"
+        line: 25
+      - level: 2
+        title: "Key Concepts of Microsoft Agent Framework"
+        line: 53
+      - level: 2
+        title: "Advanced MAF Patterns"
+        line: 338
+      - level: 2
+        title: "Hosting LangChain / LangGraph Agents on Microsoft Foundry"
+        line: 347
+      - level: 2
+        title: "Code Samples"
+        line: 429
+      - level: 2
+        title: "Got More Questions About Microsoft Agent Framework?"
+        line: 433
+      - level: 2
+        title: "Previous Lesson"
+        line: 436
+      - level: 2
+        title: "Next Lesson"
+        line: 440
+  - id: "supplementary:15-browser-use"
+    source: "supplementary"
+    path: "15-browser-use/README.md"
+    targets:
+      - 8
+      - 11
+    action: "adapt"
+    role: "supplement"
+    review_status: "reviewed_structure"
+    sections:
+      - level: 1
+        title: "Building Computer Use Agents (CUA)"
+        line: 1
+      - level: 2
+        title: "Introduction"
+        line: 7
+      - level: 2
+        title: "Learning Goals"
+        line: 16
+      - level: 2
+        title: "Code Sample"
+        line: 25
+      - level: 2
+        title: "Prerequisites"
+        line: 31
+      - level: 2
+        title: "Setup"
+        line: 39
+      - level: 2
+        title: "Architecture Overview"
+        line: 58
+      - level: 2
+        title: "Key Takeaways and Best Practices"
+        line: 69
+      - level: 2
+        title: "Real-World Example: Microsoft Project Opal"
+        line: 114
+      - level: 2
+        title: "Knowledge Check"
+        line: 136
+      - level: 2
+        title: "Additional Resources"
+        line: 180
+      - level: 2
+        title: "Previous Lesson"
+        line: 187
+      - level: 2
+        title: "Next Lesson"
+        line: 191
+  - id: "supplementary:16-deploying-scalable-agents"
+    source: "supplementary"
+    path: "16-deploying-scalable-agents/README.md"
+    targets:
+      - 9
+      - 10
+      - "platform-appendix"
+    action: "adapt_case"
+    role: "supplement"
+    review_status: "reviewed_structure"
+    sections:
+      - level: 1
+        title: "Deploying Scalable Agents with Microsoft Foundry"
+        line: 1
+      - level: 2
+        title: "Introduction"
+        line: 9
+      - level: 2
+        title: "Learning Goals"
+        line: 21
+      - level: 2
+        title: "Prerequisites"
+        line: 31
+      - level: 2
+        title: "From Prototype to Production: What Actually Changes"
+        line: 46
+      - level: 2
+        title: "Agent Deployment Patterns"
+        line: 62
+      - level: 2
+        title: "The Agent Lifecycle on Microsoft Foundry"
+        line: 104
+      - level: 2
+        title: "Scaling Strategies"
+        line: 122
+      - level: 2
+        title: "Observability in Production"
+        line: 146
+      - level: 2
+        title: "Cost Optimisation"
+        line: 167
+      - level: 2
+        title: "Enterprise Deployment Considerations"
+        line: 177
+      - level: 2
+        title: "Hands-On Lab: A Production-Ready Customer Support Agent"
+        line: 210
+      - level: 2
+        title: "Validating a Deployed Agent with Smoke Tests"
+        line: 264
+      - level: 2
+        title: "Knowledge Check"
+        line: 286
+      - level: 2
+        title: "Assignment"
+        line: 354
+      - level: 2
+        title: "Summary"
+        line: 367
+      - level: 2
+        title: "Additional Resources"
+        line: 380
+      - level: 2
+        title: "Previous Lesson"
+        line: 391
+      - level: 2
+        title: "Next Lesson"
+        line: 395
+  - id: "supplementary:17-creating-local-ai-agents"
+    source: "supplementary"
+    path: "17-creating-local-ai-agents/README.md"
+    targets:
+      - 5
+      - 6
+      - 9
+      - "platform-appendix"
+    action: "adapt_case"
+    role: "supplement"
+    review_status: "reviewed_structure"
+    sections:
+      - level: 1
+        title: "Creating Local AI Agents Using Microsoft Foundry Local and Qwen"
+        line: 1
+      - level: 2
+        title: "Introduction"
+        line: 15
+      - level: 2
+        title: "Learning Goals"
+        line: 25
+      - level: 2
+        title: "Prerequisites"
+        line: 35
+      - level: 2
+        title: "Small Language Models: The Right Tool for Local Work"
+        line: 49
+      - level: 2
+        title: "Microsoft Foundry Local"
+        line: 78
+      - level: 2
+        title: "Qwen Function Calling: Why It Matters"
+        line: 100
+      - level: 2
+        title: "Local RAG"
+        line: 119
+      - level: 2
+        title: "Local MCP Servers"
+        line: 137
+      - level: 2
+        title: "Hybrid Cloud-and-Local Patterns"
+        line: 143
+      - level: 2
+        title: "Hands-On Lab: A Local Engineering Assistant"
+        line: 167
+      - level: 2
+        title: "Knowledge Check"
+        line: 205
+      - level: 2
+        title: "Assignment"
+        line: 273
+      - level: 2
+        title: "Summary"
+        line: 286
+      - level: 2
+        title: "Additional Resources"
+        line: 298
+      - level: 2
+        title: "Previous Lesson"
+        line: 307
+      - level: 2
+        title: "Next Lesson"
+        line: 311
+  - id: "supplementary:18-securing-ai-agents"
+    source: "supplementary"
+    path: "18-securing-ai-agents/README.md"
+    targets:
+      - 11
+    action: "adapt"
+    role: "supplement"
+    review_status: "reviewed_structure"
+    sections:
+      - level: 1
+        title: "Securing AI Agents with Cryptographic Receipts"
+        line: 5
+      - level: 2
+        title: "Introduction"
+        line: 7
+      - level: 2
+        title: "Learning Goals"
+        line: 18
+      - level: 2
+        title: "The Problem: Your Agent's Audit Trail"
+        line: 29
+      - level: 2
+        title: "What is a Cryptographic Receipt?"
+        line: 47
+      - level: 2
+        title: "Producing a Receipt in Python"
+        line: 98
+      - level: 2
+        title: "Verifying a Receipt and Detecting Tampering"
+        line: 155
+      - level: 2
+        title: "Chaining Receipts for Multi-Step Agents"
+        line: 199
+      - level: 2
+        title: "What Receipts Prove (and What They Do Not)"
+        line: 228
+      - level: 2
+        title: "Proving a Human Approved the Exact Action"
+        line: 252
+      - level: 2
+        title: "Production References"
+        line: 266
+      - level: 2
+        title: "Knowledge Check"
+        line: 280
+      - level: 2
+        title: "Practice Exercise"
+        line: 324
+      - level: 2
+        title: "Conclusion"
+        line: 337
+      - level: 2
+        title: "Production Checklist"
+        line: 350
+      - level: 2
+        title: "Beyond This Lesson"
+        line: 365
+      - level: 2
+        title: "Additional Resources"
+        line: 376
+      - level: 2
+        title: "Previous Lesson"
+        line: 387

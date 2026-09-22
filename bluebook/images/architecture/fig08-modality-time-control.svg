@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="t d"><title id="t">fig08-modality-time-control</title><desc id="d">AI Agent蓝皮书架构概念图，可编辑源为Excalidraw。</desc><defs><filter id="shadow"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#172B4D" flood-opacity=".10"/></filter><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3z" fill="#42526E"/></marker></defs><rect width="100%" height="100%" fill="#F7F8FA"/>
+<text x="64" y="49.0" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="500" fill="#4C9AFF">BLUEBOOK  /  CHAPTER 08</text>
+<text x="64" y="97.0" font-family="Inter,Arial,sans-serif" font-size="31" font-weight="700" fill="#172B4D">模态 × 时序与公共控制原语</text>
+<text x="66" y="129.0" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="500" fill="#6B778C">模态不同，控制原语相同：可唤醒、可暂停、可取消、可验证</text>
+<polyline points="64,154 1336,154" fill="none" stroke="#EBECF0" stroke-width="2"/>
+<rect x="350" y="205" width="300" height="72" rx="14" fill="#EBECF0" stroke="#42526E" stroke-width="2" filter="url(#shadow)"/>
+<text x="500.0" y="230.12" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="17" fill="#42526E">SYNC</text>
+<text x="500.0" y="251.88" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="17" fill="#42526E">同步</text>
+<rect x="665" y="205" width="300" height="72" rx="14" fill="#EBECF0" stroke="#42526E" stroke-width="2" filter="url(#shadow)"/>
+<text x="815.0" y="230.12" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="17" fill="#42526E">REALTIME</text>
+<text x="815.0" y="251.88" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="17" fill="#42526E">实时</text>
+<rect x="980" y="205" width="300" height="72" rx="14" fill="#EBECF0" stroke="#42526E" stroke-width="2" filter="url(#shadow)"/>
+<text x="1130.0" y="230.12" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="17" fill="#42526E">ASYNC / LONG</text>
+<text x="1130.0" y="251.88" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="17" fill="#42526E">异步 / 长期</text>
+<rect x="55" y="293" width="250" height="98" rx="14" fill="#DEEBFF" stroke="#4C9AFF" stroke-width="2" filter="url(#shadow)"/>
+<text x="180.0" y="342.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#4C9AFF">TEXT / API</text>
+<rect x="350" y="293" width="300" height="98" rx="14" fill="#FFFFFF" stroke="#42526E" stroke-width="2" filter="url(#shadow)"/>
+<text x="500.0" y="331.12" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="17" fill="#42526E">对话</text>
+<text x="500.0" y="352.88" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="17" fill="#42526E">Tool Call</text>
+<rect x="665" y="293" width="300" height="98" rx="14" fill="#FFFFFF" stroke="#42526E" stroke-width="2" filter="url(#shadow)"/>
+<text x="815.0" y="342.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="17" fill="#42526E">流式文本</text>
+<rect x="980" y="293" width="300" height="98" rx="14" fill="#FFFFFF" stroke="#42526E" stroke-width="2" filter="url(#shadow)"/>
+<text x="1130.0" y="331.12" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="17" fill="#42526E">邮件</text>
+<text x="1130.0" y="352.88" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="17" fill="#42526E">队列任务</text>
+<rect x="55" y="405" width="250" height="98" rx="14" fill="#EAE6FF" stroke="#6554C0" stroke-width="2" filter="url(#shadow)"/>
+<text x="180.0" y="454.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#6554C0">VOICE</text>
+<rect x="350" y="405" width="300" height="98" rx="14" fill="#FFFFFF" stroke="#42526E" stroke-width="2" filter="url(#shadow)"/>
+<text x="500.0" y="454.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="17" fill="#42526E">语音问答</text>
+<rect x="665" y="405" width="300" height="98" rx="14" fill="#FFFFFF" stroke="#42526E" stroke-width="2" filter="url(#shadow)"/>
+<text x="815.0" y="443.12" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="17" fill="#42526E">双向通话</text>
+<text x="815.0" y="464.88" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="17" fill="#42526E">打断</text>
+<rect x="980" y="405" width="300" height="98" rx="14" fill="#FFFFFF" stroke="#42526E" stroke-width="2" filter="url(#shadow)"/>
+<text x="1130.0" y="443.12" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="17" fill="#42526E">留言</text>
+<text x="1130.0" y="464.88" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="17" fill="#42526E">回拨</text>
+<rect x="55" y="517" width="250" height="98" rx="14" fill="#FFF0B3" stroke="#FF991F" stroke-width="2" filter="url(#shadow)"/>
+<text x="180.0" y="566.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#FF991F">GUI</text>
+<rect x="350" y="517" width="300" height="98" rx="14" fill="#FFFFFF" stroke="#42526E" stroke-width="2" filter="url(#shadow)"/>
+<text x="500.0" y="566.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="17" fill="#42526E">单步操作</text>
+<rect x="665" y="517" width="300" height="98" rx="14" fill="#FFFFFF" stroke="#42526E" stroke-width="2" filter="url(#shadow)"/>
+<text x="815.0" y="566.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="17" fill="#42526E">屏幕协作</text>
+<rect x="980" y="517" width="300" height="98" rx="14" fill="#FFFFFF" stroke="#42526E" stroke-width="2" filter="url(#shadow)"/>
+<text x="1130.0" y="555.12" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="17" fill="#42526E">长流程</text>
+<text x="1130.0" y="576.88" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="17" fill="#42526E">网页任务</text>
+<rect x="55" y="629" width="250" height="98" rx="14" fill="#E3FCEF" stroke="#00875A" stroke-width="2" filter="url(#shadow)"/>
+<text x="180.0" y="678.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="18" fill="#00875A">PHYSICAL</text>
+<rect x="350" y="629" width="300" height="98" rx="14" fill="#FFFFFF" stroke="#42526E" stroke-width="2" filter="url(#shadow)"/>
+<text x="500.0" y="678.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="17" fill="#42526E">设备命令</text>
+<rect x="665" y="629" width="300" height="98" rx="14" fill="#FFFFFF" stroke="#42526E" stroke-width="2" filter="url(#shadow)"/>
+<text x="815.0" y="667.12" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="17" fill="#42526E">机器人</text>
+<text x="815.0" y="688.88" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="17" fill="#42526E">闭环</text>
+<rect x="980" y="629" width="300" height="98" rx="14" fill="#FFFFFF" stroke="#42526E" stroke-width="2" filter="url(#shadow)"/>
+<text x="1130.0" y="667.12" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="17" fill="#42526E">巡检</text>
+<text x="1130.0" y="688.88" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="17" fill="#42526E">持续任务</text>
+<rect x="55.0" y="785" width="165" height="62" rx="14" fill="#DEEBFF" stroke="#42526E" stroke-width="2" filter="url(#shadow)"/>
+<text x="137.5" y="816.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="13" fill="#42526E">WAKE</text>
+<rect x="231.7" y="785" width="165" height="62" rx="14" fill="#E6FCFF" stroke="#42526E" stroke-width="2" filter="url(#shadow)"/>
+<text x="314.2" y="816.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="13" fill="#42526E">CHECKPOINT</text>
+<rect x="408.4" y="785" width="165" height="62" rx="14" fill="#E3FCEF" stroke="#42526E" stroke-width="2" filter="url(#shadow)"/>
+<text x="490.9" y="816.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="13" fill="#42526E">SAFE POINT</text>
+<rect x="585.0999999999999" y="785" width="165" height="62" rx="14" fill="#FFEBE6" stroke="#42526E" stroke-width="2" filter="url(#shadow)"/>
+<text x="667.5999999999999" y="816.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="13" fill="#42526E">CANCEL</text>
+<rect x="761.8" y="785" width="165" height="62" rx="14" fill="#FFF0B3" stroke="#42526E" stroke-width="2" filter="url(#shadow)"/>
+<text x="844.3" y="816.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="13" fill="#42526E">PREEMPT</text>
+<rect x="938.5" y="785" width="165" height="62" rx="14" fill="#EAE6FF" stroke="#42526E" stroke-width="2" filter="url(#shadow)"/>
+<text x="1021.0" y="816.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="13" fill="#42526E">BACKPRESSURE</text>
+<rect x="1115.1999999999998" y="785" width="165" height="62" rx="14" fill="#E3FCEF" stroke="#42526E" stroke-width="2" filter="url(#shadow)"/>
+<text x="1197.6999999999998" y="816.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-size="13" fill="#42526E">VERIFY</text>
+<polyline points="657,241 665,241" fill="none" stroke="#6B778C" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="972,241 980,241" fill="none" stroke="#6B778C" stroke-width="2" marker-end="url(#arrow)"/>
+</svg>
