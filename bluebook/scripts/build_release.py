@@ -26,7 +26,7 @@ def build_experiment_catalog(rows):
    search=f"{eid} {clean} {level} {status} chapter {chapter}"
    state_class="reviewed" if status=="已审查" else "pending"
    evidence_class=re.sub(r"[^a-z0-9]","",level.lower()) or "unknown"
-   out.append(f'<article class="experiment-card" data-search="{html.escape(search,quote=True)}"><a class="experiment-id" href="{eid}/">{eid}</a><div class="experiment-copy"><h2><a href="{eid}/">{html.escape(clean)}</a></h2><div class="experiment-meta"><span class="evidence {evidence_class}">{html.escape(level)}</span><span class="state {state_class}">{status}</span></div></div></article>')
+   out.append(f'<article class="experiment-card" data-search="{html.escape(search,quote=True)}"><a class="experiment-id" href="./{eid}/">{eid}</a><div class="experiment-copy"><h2><a href="./{eid}/">{html.escape(clean)}</a></h2><div class="experiment-meta"><span class="evidence {evidence_class}">{html.escape(level)}</span><span class="state {state_class}">{status}</span></div></div></article>')
   out.append('</div></section>')
  out.append('</div>');return "\n".join(out)
 def prepare():

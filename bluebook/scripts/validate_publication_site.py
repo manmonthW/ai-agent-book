@@ -17,6 +17,7 @@ for marker in ("最低充分自主性","让模型处理不确定性","先看证�
 if not (D/"assets/bluebook.css").exists() or not (D/"assets/bluebook.js").exists():failures.append("theme assets missing")
 exp_index=(D/"experiments/index.html").read_text(encoding="utf-8") if (D/"experiments/index.html").exists() else ""
 if re.search(r'href=["\'][^"\']+\.md["\']',exp_index):failures.append("experiment catalog leaked source .md links")
+if 'href="./1-1/"' not in exp_index:failures.append("experiment catalog route is not anchored to experiments directory")
 sitemap=(D/"sitemap.xml").read_text(encoding="utf-8") if (D/"sitemap.xml").exists() else ""
 if sitemap.count("<url>") < 150 or "https://www.keaimentor.com/bluebook/experiments/1-1/" not in sitemap:failures.append("sitemap missing publication routes")
 fallback=(D/"404.html").read_text(encoding="utf-8") if (D/"404.html").exists() else ""
