@@ -8,6 +8,12 @@ EXCLUDE={"09-11-production-control-plane-sample.md","_CHAPTER_TEMPLATE.md","_PAT
 
 def clean():
  shutil.rmtree(SITE,ignore_errors=True); SITE.mkdir(parents=True)
+def rewrite_base_paths():
+ for p in SITE.rglob("*.html"):
+  text=p.read_text(encoding="utf-8")
+  text=re.sub(r'(["\'])/(assets|chapters|patterns|experiments|appendices)/',r'\1/bluebook/\2/',text)
+  text=re.sub(r'(["\'])/(search/)',r'\1/bluebook/\2',text)
+  p.write_text(text,encoding="utf-8")
 def cp(src:Path,dst:Path): dst.parent.mkdir(parents=True,exist_ok=True); shutil.copy2(src,dst)
 def rewrite(text:str)->str:
  text=text.replace("../images/architecture/","../assets/figures/")
@@ -72,4 +78,5 @@ def main():
  cmd=[sys.executable,"-m","mkdocs","serve" if a.serve else "build","-f",str(BLUE/"mkdocs.yml")]
  if not a.serve:cmd.append("--strict")
  subprocess.run(cmd,check=True,cwd=BLUE)
+ if not a.serve:rewrite_base_paths()
 if __name__=="__main__":main()

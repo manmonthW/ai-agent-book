@@ -22,6 +22,9 @@ sitemap=(D/"sitemap.xml").read_text(encoding="utf-8") if (D/"sitemap.xml").exist
 if sitemap.count("<url>") < 150 or "https://www.keaimentor.com/bluebook/experiments/1-1/" not in sitemap:failures.append("sitemap missing publication routes")
 fallback=(D/"404.html").read_text(encoding="utf-8") if (D/"404.html").exists() else ""
 if 'href="/assets/' in fallback or 'href="/chapters/' in fallback:failures.append("404 page escapes /bluebook base path")
+for p in html:
+ text=p.read_text(encoding="utf-8")
+ if re.search(r'(?:href|src)=["\']/(?:assets|chapters|patterns|experiments|appendices|search)/',text):failures.append(f"page escapes /bluebook base path: {p.relative_to(D)}");break
 if failures:
  print("Publication site validation FAILED");[print(f"- {x}") for x in failures];sys.exit(1)
 print("Publication site validation PASSED")
