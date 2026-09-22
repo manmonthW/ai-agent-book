@@ -6,7 +6,9 @@
 
 <span class="release-badge">Release Candidate 1</span>
 
-# 构建可信、可控、可演进的AI Agent
+<p class="hero-kicker">AI Agent 工程蓝皮书</p>
+
+# 构建可信、可控、可演进的<br><span class="hero-title-lockup">AI Agent</span>
 
 一本面向决策者、架构师与开发者的厂商中立工程手册。它不从“哪个模型最强”出发，而从权力、状态、证据和环境反馈出发。
 
